@@ -2,7 +2,7 @@ public class Caminhao extends Veiculo {
 	
 	protected final int limitedaestrada = 50;
 	protected int capacidadeDeCarga = 100;
-	protected int qtdCarga;
+	public int qtdCarga;
 	
 	public void movimento(int n){
 		if ((velocidade + n) <= limitedaestrada){
