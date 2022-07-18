@@ -1,4 +1,4 @@
-public class CaminhaoTest {
+public class CaminhaoTest extends Veiculo {
 
 
 

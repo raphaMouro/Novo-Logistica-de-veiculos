@@ -17,17 +17,21 @@ public class Caminhao extends Veiculo {
 		
 	public void carregaCaminhao(int n){
 		System.out.println("Carregando Caminhao");
-		if ((qtdCarga + n) <= capacidadeDeCarga){
+		if ((qtdCarga + n) <= capacidadeDeCarga &&  n > 0) {
 			qtdCarga = qtdCarga + n;
-			System.out.println("Colocar Carga >> Carga=" + qtdCarga);
+			System.out.println("Carregamento da Carga liberado >> Carga=" + qtdCarga);
+				
 		}
-	
-		else{
-			qtdCarga = qtdCarga + n;
-			System.out.println("Caminhao Carregado >> Carga=" + qtdCarga);
-		}
-	}
 		
+		else {
+			System.out.println("Verifique a capacidade de carga mínima e máxima permitida.");
+		
+
+			}
+	
+	
+	}
+
 	public void descarregaCaminhao(int n){
 		System.out.println("Descarregando Caminhao");
 		if((qtdCarga - n) >= 0){
@@ -43,4 +47,5 @@ public class Caminhao extends Veiculo {
 	public String toString(){
 		return(super.toString() + " Carga: "+qtdCarga);
 	}
+
 }

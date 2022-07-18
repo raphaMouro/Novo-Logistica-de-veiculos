@@ -11,10 +11,13 @@ public class Teste{
 		ca.movimento(65);
 		
 		ca.carregaCaminhao(50);
-		ca.carregaCaminhao(60);
+		ca.carregaCaminhao(50);
+		ca.carregaCaminhao(50);
 		
 		ca.descarregaCaminhao(20);
-		ca.descarregaCaminhao(100);
+		ca.descarregaCaminhao(75);
+
+		System.out.println(ca.toString());
 		
 		System.out.println ("");
 		System.out.println ("Teste da Classe Onibus");
